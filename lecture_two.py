@@ -72,18 +72,56 @@
 
 # print("grade of the student ->", grade)
 
-# PRATICE QUESTION
+# PRATICE QUESTION  1.
 
-light = "green"
+# light = "green"
 
-if(light == "red"):
-    print("stop")
-elif(light == "yellow"):
-    print("running")
-elif(light == "green"):
-    print("start")
+# if(light == "red"):
+#     print("stop")
+# elif(light == "yellow"):
+#     print("running")
+# elif(light == "green"):
+#     print("start")
+# else:
+#     print("light is not avilable")
+
+# #   NESTING
+# age = int(input("enter age number:"))
+
+# if(age >= 18):
+#     if(age >= 80):
+#         print("cannot dirve")
+#     else:
+#         print("can drive")
+# else:
+#     print("cannot drive")
+
+#     # PRACTICE QUESTION  2.
+
+# a = int(input("enter first number: "))
+# b = int(input("enter second number: "))
+# c = int(input("enter third number: "))
+
+# if(a >= b and a >= c):
+#     print("first number is largest")
+# elif(b >= c):
+#     print("second number is largest")
+# else:
+#     print("third number is largest")
+    
+    #    PRACTICE QUESTION  3.
+
+a = int(input("enter the first number: "))
+b = int(input("enter the second number: "))
+c = int(input("enter the third number: "))
+d = int(input("enter the forth numer: "))
+
+if(a >= b and a >= c and a >= d ):
+    print("first number is largest")
+elif(b >= c and b >= d ):
+    print("second number is largest")
+elif(c >= d ):
+    print("third numwer is largest")
 else:
-    print("light is not avilable")
-
-
-
+    print("forth numer is largest")
+    
