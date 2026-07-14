@@ -46,4 +46,26 @@
 
 #   TUPLES IN PYTHON
 
-  
+tup = (2, 1, 3, 1)
+
+print(tup[0])
+print(tup[1])
+print(type(tup))
+print(tup)
+
+tup = ()
+print(tup)
+print(type(tup))
+
+tup = (1)
+print(type(tup))
+
+tup = (1,)
+print(type(tup))
+
+#  TUPLE METHODS
+tup = (2, 1, 3, 1)
+print(tup.index(3))
+
+# PRATICE QUESTION
+
