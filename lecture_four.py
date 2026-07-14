@@ -19,6 +19,7 @@ print(info["sabject"])
 null_dict = {}
 
 null_dict["name"] = "dhiraj kumar"
+null_dict["age"] = 21
 
 print(null_dict)
 
