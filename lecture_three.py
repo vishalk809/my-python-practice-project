@@ -67,5 +67,33 @@ print(type(tup))
 tup = (2, 1, 3, 1)
 print(tup.index(3))
 
-# PRATICE QUESTION
+print(tup.count(1))
 
+#  PRACTICE QUESTION
+#  1. WAP TO ASK THE USER TO ENTER NAMES OF THEIR  FAVORITE MOVIES & STORE THEM IN A LIST.
+
+movies = []
+
+movies1 = input("enter the 1st movies name: ")
+movies2 = input("enter the 2nd movies name: ")
+movies3 = input("enter the 3rd movies name: ")
+movies.append(movies1)
+movies.append(movies2)
+movies.append(movies3)
+
+print(movies)
+
+# 2. WAP TO CHECK IF A LIST CONTAINS A PALINDROME OF ELEMENTS.(HINT: USE COPY() ,METHOD)
+
+list1 = [1, 2, 1]
+list2 = [1, 2, 3]
+
+copy_list1 = list1.copy()
+copy_list1.reverse()
+
+if(copy_list1 == list1):
+    print("palindrome")
+else:
+    print("NOT palindorme")   
+
+    
