@@ -86,3 +86,21 @@ print(set1)
 print(set2)
 # 
 print(set1.intersection(set2))
+
+#  PRACTICE QUESTIONS //
+#   STORE FOLLOWING WORDS MEANINGS IN A PYTHON DICTONARY :
+dictionary = {
+    "cat" : "a small animal",
+    "table" : ["a piece of furniture", "list of facts & figures"]
+}
+print(dictionary)
+
+# YOU ARE A GIVEN A LIST OF SUBJECTS FOR STUDENTS. ASSUME ONE CLASSROOM IS REQUIRED FOR 1 SUBJECT. 
+# HOEW MANY CLASSROOMS ARE NEEDED BY ALL STUDENTS.
+
+subject = {
+    "python", "java", "c++", "python", "javascript", "java", "python", "java", "c++", "c"
+}
+
+print(subject)
+print(len(subject))
