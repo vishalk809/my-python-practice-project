@@ -70,4 +70,39 @@ while i <= 5:
     print(i)
     i += 1
 
-    
+#  FOR LOOPS
+nums = [1, 2, 3, 4, 5, 6]
+
+for val in nums:
+    print(val)
+
+
+tup = (1, 2, 3, 4, 5 )
+
+for num in tup:
+    print(num)
+
+str = "apnacollage"
+
+for char in str:
+    print(char)
+
+    #  ELSE
+    str = " vishalkumar"
+
+    for char in str:
+        print(char)
+    else:
+        print("END")
+
+#  PRACTICE QUESTION
+# SEARCH FOR A  NUMBER X IN THIS TUPLE USING LOOP:
+nums = (1, 4, 9, 16, 25, 36, 49, 64, 81, 100, )
+x = 16
+
+idx = 0
+for el in nums:
+    if(el == x):
+        print("number found at idx", idx)
+    idx += 1
+
