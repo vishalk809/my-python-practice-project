@@ -106,3 +106,76 @@ for el in nums:
         print("number found at idx", idx)
     idx += 1
 
+#  RANGE IN PYTHON
+seq = range(10)
+
+for i in seq:
+    print(i)
+
+for i in range(10):
+    print(i)
+
+# START, STOP, STEP //
+
+for i in range(20):
+    print(i)
+
+for i in range(2, 20):
+    print(i)
+
+for i in range(2, 20, 2):
+    print(i)
+
+#  EVEN NUM. 1 TO 100:
+for i in range(2, 100, 2):
+    print(i)
+
+#  ODD NUM. 1 TO 100:
+for i in range(1, 100, 2):
+    print(i)
+
+#   PRACTICE QUESTION:  , USING FOR & RANGE()
+# 1. PRINT NUMBERS FROM 1 TO 100.
+
+for i in range(1, 101):
+    print(i)
+
+
+# 2.    PRINTS NUMBERS FROM 100 TO 1.
+
+for i in range(100, 0, -1):
+    print(i)
+
+# 3. PRINT THE MULTIPLICATION  TABLE OF A NUMBER n.
+
+n = int(input("enter the number: "))
+
+for i in range(1, 11):
+    print(n * i)
+
+
+# //// PASS STATEMENT
+for i in range(5):
+    pass
+    
+print("some useful work")
+
+# 4. WAP TO FIND THE SUM OF FIRST n NUMBERS.( USING WHILE ):
+n = 7
+sum = 0
+i = 1
+while i <= n:
+    sum += i
+    i += 1
+
+print("total sum =", sum)
+ 
+
+#  WAP TO FIND THE  FACTORIAL OF FIRST n NUMBERS. (USING FOR):
+n = 5
+fact = 1
+
+for i in range(1, n+1):
+    fact *= i
+
+print("factorial", fact)
