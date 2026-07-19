@@ -79,3 +79,43 @@ def converter(usd_val):
 
 converter(1)
 
+#  RECURSION  IN PYTHON 
+
+def show(n):
+    if(n == 0):
+        return
+    print(n)
+    show(n-1)
+    # print("END")
+
+show(5)
+
+#  RETURNS n!(n factorial)
+def fact(n):
+    if(n == 1 or n == 0):
+        return 1
+    return fact(n-1) * n
+
+print(fact(4))
+
+
+#  PRACTICE QUESTION
+# WRITE A RECURSIVE FUNCTION TO CACULATE THE SUM OF FIRST n NATURAL NUMBERS.
+def cacl_sum(n):
+    if(n == 0):
+        return 0
+    return cacl_sum(n-1) + n
+sum = cacl_sum(10)
+print(sum)
+
+# WRITE A RECURSIVE FUNCTION TO PRINT ALL ELEMENTS IN A LIST.(HINT- USE LIST & INDEX AS PARAMETER)
+
+def print_list(list, idx=0):
+    if(idx == len(list)):
+        return
+    print(list[idx])
+    print_list(list, idx+1)
+
+fruits = ["mango", "lichi","apple", "banana","grapes"]
+
+print_list(fruits)
