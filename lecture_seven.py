@@ -74,5 +74,32 @@ def check_for_word():
             print("not found")   
 
 check_for_word()
-            
 
+# 4.WAF TO FIND IN THE WHICH LINE OF THE FILE DOES THE WORD "LEARNING" OCCUR FKRST. PRINT -1 IF WORD NOT FOUND
+def check_for_line():
+    word = "learning"
+    data = True
+    line_no = 1
+    with open ("practice.txt", "r") as f:
+        while data:
+            data = f.readline()
+            if(word in data):
+                print(line_no)
+                return
+            line_no += 1
+
+    return -1
+
+check_for_line()
+ 
+# FROM A FILE CONTAINING NUMBERS SEPARATED BY COMMA,  PRINT THE COUNT OF EVEN NUMBER.
+count = 0 
+with open("sample.txt", "r") as f:
+    data = f.read()
+
+    nums = data.split(",")
+    for val in nums:
+        if(int(val) %2 == 0):
+            count += 1
+
+print(count)
