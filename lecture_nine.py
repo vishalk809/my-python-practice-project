@@ -127,4 +127,64 @@ print(stu1.percentage)
 stu1.phy = 86
 print(stu1.percentage)
 
+# POLYMORPHISM: OPERATOR OVERLOADING. 
+class Complex:
+    def __init__(self, real, img):
+        self.real = real
+        self.img = img
+
+    def showNumber(self):
+        print(self.real, "i +", self.img,"j")
+
+    def __add__(self, num2):
+        newReal = self.real + num2.real
+        newImg = self.img + num2.img
+        return Complex(newReal, newImg)
+
+    
+num1 = Complex(1, 3)
+num1.showNumber()
+
+num2 = Complex(4, 6)
+num2.showNumber()
+
+num3 = num1+ num2
+num3.showNumber()
+
+# PRACTICE QUESTION
+# 1. DEFINE A CIRCLE CLASS TO CREATE A CIRCLE WITH REDIUS R USING THE CONSTRUCTOR.  DEFINE AN AREA() METHOD OF THE CLASS WHICH CALCULATE AREA OF THE CIRCLE.  DEFINE A PERIMETER() METHOD OF THE CLASS WHICH ALLOWS YOU TO CALCULATE THE PERIMETER OF THE CIRCLE.
+class circle:
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return (22/7) * self.radius **2
+
+    def perimeter(self):
+        return 2 *(22/7) * self.radius
+
+c1 = circle(21)
+print(c1.area())
+print(c1.perimeter())    
+
+# 2. DEFINE A EMPLOYEE  CLASS WITH ATTRIBUTES ROLE, DEPARTMENT & SALARY. THIS CLASS ALSO A SHOWDETAILS() METHOD.  CREATE AN ENGINEER CLASS THAT INHERITIES PROPERTIES FROM EMPLOYEE & HAS ADDITIONAL ATTRIBUTES:NAME & AGE.
+class Employee:
+    def __init__(self, role, dept, salary):
+        self.role = role
+        self.dept = dept
+        self.salary = salary
+
+    def showADetails(self):
+        print("role =", self.role)
+        print("dept =", self.dept)
+        print("salary =", self.salary)
+
+class Engineer(Employee):
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+        super().__init__("Engineer", "IT", "75,000" )
+
+engg1 = Engineer("vishal kumar", 21)
+engg1.showADetails()
 
